@@ -11,12 +11,12 @@ find_package(OpenGL REQUIRED)
 add_subdirectory (libs)
 
 include_directories(
-	libs/glfw-3.1.1/include/GLFW/
-	libs/glm-0.9.7.0/
-	libs/glew-1.13.0/include/
+	libs/glfw/include/GLFW/
+	libs/glm/
+	libs/glew/include/
 	.
 )
-#libs/glfw-3.1.1/include/GLFW/
+
 
 
 set(ALL_LIBS
@@ -24,7 +24,7 @@ set(ALL_LIBS
 	glfw
 	glew
 )
-	#GLFW_311
+
 
 add_definitions(
 	-DTW_STATIC
