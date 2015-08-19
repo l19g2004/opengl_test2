@@ -51,6 +51,8 @@ int main () {
 
   /* OTHER STUFF GOES HERE NEXT */
   
+  // add some idea
+    
   // close GL context and any other GLFW resources
   glfwTerminate();
   return 0;

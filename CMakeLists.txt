@@ -13,7 +13,7 @@ add_subdirectory (libs)
 include_directories(
 	libs/glfw/include/GLFW/
 	libs/glm/
-	libs/glew/include/
+	libs/glew-1.13.0/include/
 	.
 )
 
