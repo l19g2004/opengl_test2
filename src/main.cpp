@@ -19,7 +19,7 @@ int main () {
   if (!glfwInit ()) {
     fprintf (stderr, "ERROR: could not start GLFW3\n");
     return 1;
-  } 
+  }
 
 	// uncomment these lines if on Apple OS X
   /*glfwWindowHint (GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -34,7 +34,7 @@ int main () {
     return 1;
   }
   glfwMakeContextCurrent (window);
-                                  
+
   // start GLEW extension handler
   glewExperimental = GL_TRUE;
   glewInit ();
@@ -50,9 +50,10 @@ int main () {
   glDepthFunc (GL_LESS); // depth-testing interprets a smaller value as "closer"
 
   /* OTHER STUFF GOES HERE NEXT */
-  
+
   // add some idea
-    
+  // here is a bug
+
   // close GL context and any other GLFW resources
   glfwTerminate();
   return 0;
