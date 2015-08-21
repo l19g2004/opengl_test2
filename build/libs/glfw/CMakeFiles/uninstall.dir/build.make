@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.3.0/bin/cmake
+CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.3.0/bin/cmake -E remove -f
+RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/Lukas/Documents/Software/opengl_workspace/opengl_test2
 include libs/glfw/CMakeFiles/uninstall.dir/progress.make
 
 libs/glfw/CMakeFiles/uninstall:
-	cd /Users/Lukas/Documents/Software/opengl_workspace/opengl_test2/build/libs/glfw && /usr/local/Cellar/cmake/3.3.0/bin/cmake -P /Users/Lukas/Documents/Software/opengl_workspace/opengl_test2/build/libs/glfw/cmake_uninstall.cmake
+	cd /Users/Lukas/Documents/Software/opengl_workspace/opengl_test2/build/libs/glfw && /Applications/CMake.app/Contents/bin/cmake -P /Users/Lukas/Documents/Software/opengl_workspace/opengl_test2/build/libs/glfw/cmake_uninstall.cmake
 
 uninstall: libs/glfw/CMakeFiles/uninstall
 uninstall: libs/glfw/CMakeFiles/uninstall.dir/build.make
