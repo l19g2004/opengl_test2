@@ -34,9 +34,37 @@ add_definitions(
 	-D_CRT_SECURE_NO_WARNINGS
 )
 
+include_directories ("${PROJECT_SOURCE_DIR}/inc")
+
+# set source files
+SET( MY_SOURCES 
+	src/gl_utils.cpp
+	src/main.cpp 
+	
+)
+
+# set header files
+SET( MY_HEADERS 
+        inc/gl_utils.hpp
+)
+
+FOREACH(next_ITEM ${MY_SOURCES})
+   MESSAGE(STATUS "add source: ${next_ITEM}")
+ENDFOREACH(next_ITEM ${MY_SOURCES})
+
+FOREACH(next_ITEM ${MY_HEADERS})
+   MESSAGE(STATUS "add header: ${next_ITEM}")
+ENDFOREACH(next_ITEM ${MY_HEADERS})
+
+IF(APPLE)
+        MESSAGE(STATUS "Use plattform: APPLE OSX")
+        add_definitions(-DAPPLE)
+ENDIF()
+
 # 
 add_executable(opengl_test2 
-	src/main.cpp
+	${MY_SOURCES}
+	${MY_HEADERS}
 )
 target_link_libraries(opengl_test2
 	${ALL_LIBS}

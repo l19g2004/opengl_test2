@@ -7,11 +7,11 @@
 | See individual libraries for separate legal notices                          |
 \******************************************************************************/
 
-#ifndef _GL_UTILS_H_
-#define _GL_UTILS_H_
+#ifndef _GL_UTILS_HPP_
+#define _GL_UTILS_HPP_
 
 #include <GL/glew.h> // include GLEW and new version of GL on Windows
-#include <GLFW/glfw3.h> // GLFW helper library
+#include <glfw3.h> // GLFW helper library
 #include <stdarg.h>
 #define GL_LOG_FILE "gl.log"
 

@@ -12,7 +12,7 @@
 | If you have a big object-oriented engine then maybe you can ask yourself if  |
 | it is really making life easier.                                             |
 \******************************************************************************/
-#include "gl_utils.h"
+#include "inc/gl_utils.hpp"
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
